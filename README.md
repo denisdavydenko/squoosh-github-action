@@ -18,7 +18,7 @@ on:
       - '**.png'
       - '**.gif'
 jobs:
-  crush:
+  optimize:
     runs-on: ubuntu-latest
     permissions:
       contents: read
