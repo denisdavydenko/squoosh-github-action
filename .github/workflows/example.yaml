@@ -1,0 +1,23 @@
+name: Optimize images
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.gif'
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Optimize images
+        uses: denisdavydenko/squoosh-github-action@master
+        with:
+          repo-token: ${{ secrets.GIT_HUB_TOKEN }}
