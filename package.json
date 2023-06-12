@@ -1,0 +1,23 @@
+{
+  "name": "squoosh-github-action",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build . -o dist"
+  },
+  "keywords": [],
+  "author": "Denis Davydenko <kokateka@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.0.0",
+    "@squoosh/lib": "^0.5.3",
+    "humanize": "0.0.9"
+  },
+  "repository": "git@github.com:denisdavydenko/squoosh-github-action.git",
+  "devDependencies": {
+    "release-it": "^15.11.0"
+  }
+}
