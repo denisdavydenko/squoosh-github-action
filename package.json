@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0",
-    "@actions/github": "^2.0.0",
+    "@actions/github": "^5.1.1",
     "@squoosh/lib": "^0.5.3",
     "humanize": "0.0.9"
   },
