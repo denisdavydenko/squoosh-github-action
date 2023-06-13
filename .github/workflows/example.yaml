@@ -8,6 +8,7 @@ on:
       - '**.jpeg'
       - '**.png'
       - '**.gif'
+      - '**.svg'
 jobs:
   optimize:
     runs-on: ubuntu-latest
