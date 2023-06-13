@@ -21,7 +21,7 @@ jobs:
   optimize:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
     steps:
       - name: Checkout
@@ -29,5 +29,5 @@ jobs:
       - name: Optimize images
         uses: denisdavydenko/squoosh-github-action@master
         with:
-          repo-token: ${{ secrets.GIT_HUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
