@@ -20,4 +20,4 @@ jobs:
       - name: Optimize images
         uses: denisdavydenko/squoosh-github-action@1.0.0
         with:
-          repo-token: ${{ secrets.GIT_HUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
