@@ -19,7 +19,7 @@ const getChangedFiles = async () => {
   });
   const changedFilePaths = listFilesResponse.data
     .map(f => f.filename)
-    .filter(f => f.match(/^.*\.(png|jpeg|jpg|gif)$/i))
+    .filter(f => f.match(/^.*\.(svg|png|jpeg|jpg|gif)$/i))
     .filter(f => !f.match(/\/node_modules\//));
   for await (const changedFilePath of changedFilePaths) {
     images.push({
