@@ -17,6 +17,6 @@
   },
   "repository": "git@github.com:denisdavydenko/squoosh-github-action.git",
   "devDependencies": {
-    "release-it": "^15.11.0"
+    "release-it": "^16.1.2"
   }
 }
